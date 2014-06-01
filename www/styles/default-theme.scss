@@ -1,0 +1,551 @@
+@import 'sencha-touch/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+//@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-carousel;
+//@include sencha-form;
+//@include sencha-msgbox;
+
+html, body {
+	font-family: 'Carrois Gothic', sans-serif;
+}
+.x-body {
+	background:url(resources/images/fiftyShades.png) 0 0 repeat #d6d7d8;
+}
+
+.x-service-list-item {
+	background:#222324;
+	margin:5px 10px;
+}
+.x-provider-list-item {
+	background:#4b4a4a;
+}
+.providerList {
+	min-height:2.3em;
+	position:relative;	
+}
+.providerTitle {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 80%;
+ 	h4 {
+ 		color:#FFF;
+ 		margin:0;
+ 		line-height:1em;
+ 	}
+ 	p {
+ 		margin:0;
+ 		line-height:1em;
+ 	}
+ }
+ .providerDistance {
+	position:absolute;
+	top:0;
+	right:0;
+ 	width:20%;
+ }
+.x-list .x-list-item {
+	color:#FFF;
+}
+.servicesList {
+	background:url(resources/images/whiteArra.png) right center no-repeat transparent;
+	background-size:20px 20px;
+	padding-left:40px;
+}
+.x-list-selecta .servicesList, .x-list-pressure .servicesList {
+	color:#EEE;
+}
+.x-list .x-list-disclosure {
+	background:#FFF;
+	bottom:auto;
+	height: 3em;
+	overflow: visible;
+	right: 5px;
+	top: 10px;
+	width: 3em;
+	-webkit-mask: 10px 0 url(resources/images/whiteArraMask.png) no-repeat;	
+	-webkit-mask-size: 2em;
+}
+.x-list .x-list-disclosure:active {
+	background:#000;
+	overflow: visible;
+	-webkit-mask: 10px 0 url(resources/images/whiteArraMask.png) no-repeat;	
+}
+.contraception {
+	background:url(resources/images/listIconContraception.png) left center no-repeat #87c032;
+	background-size:40px 40px;
+}
+.emergency-contraception {
+	background:url(resources/images/listIconEmergencyContraception.png) left center no-repeat #888;
+	background-size:40px 40px;
+}
+.free-condoms {
+	background:url(resources/images/listIconFreeCondoms.png) left center no-repeat #666;
+	background-size:40px 40px;
+}
+.hiv-counselling {
+	background:url(resources/images/listIconHivCounselling.png) left center no-repeat #21aabd;
+	background-size:40px 40px;
+}
+.hiv-support {
+	background:url(resources/images/listIconHivSupport.png) left center no-repeat #654b6b;
+	background-size:40px 40px;
+}
+.hiv-testing {
+	background:url(resources/images/listIconHivTesting.png) left center no-repeat #bd2a4e;
+	background-size:40px 40px;
+}
+.hiv-treatment-and-care {
+	background:url(resources/images/listIconHivTreatmentAndCare.png) left center no-repeat #4b4a4a;
+	background-size:40px 40px;
+}
+.post-exposure-prophylaxis {	
+	background:url(resources/images/listIconPostExposureProphylaxis.png) left center no-repeat #32c0a4;
+	background-size:40px 40px;
+}
+.sti-testing {
+	background:url(resources/images/listIconStiTesting.png) left center no-repeat #ed615e;
+	background-size:40px 40px;
+}
+.sti-treatment {
+	background:url(resources/images/listIconStiTreatment.png) left center no-repeat #524f4b;
+	background-size:40px 40px;
+}
+.sexual-health-information-advice {
+	background:url(resources/images/listIconSexualHealthInfoAdvice.png) left center no-repeat #c9d240;
+	background-size:40px 40px;
+}
+.mia {
+	display:none;
+}
+
+.x-toolbar-dark.x-docked-top {
+	background:url(resources/images/darkTartan.png) 0 0 repeat #1f1f1f;
+	border-bottom:1px solid #f5f5f5;
+	height:45px;
+}
+.x-docked-bottom {
+	background:url(resources/images/darkTartan.png) 0 0 repeat #1f1f1f;
+	border-top:1px solid #f5f5f5;
+	height:50px;
+}
+.x-tabbar.x-docked-bottom .x-tab {
+	-webkit-border-radius: 0;
+	background:transparent;
+	border-radius: 0;
+	border:0;
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	border-left:1px solid #393939;
+}
+.x-tab .x-button-icon.home {
+	-webkit-mask-image:none;
+	background:url(resources/images/buttonIconHome.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-tab-active .x-button-icon.home {
+	background:url(resources/images/buttonIconHomeActive.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-tab .x-button-icon.search {
+	-webkit-mask-image:none;
+	background:url(resources/images/buttonIconSearch.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-tab-active .x-button-icon.search {
+	background:url(resources/images/buttonIconSearchActive.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-tab .x-button-icon.star {
+	-webkit-mask-image:none;
+	background:url(resources/images/buttonIconStar.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-tab-active .x-button-icon.star {
+	background:url(resources/images/buttonIconStarActive.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-tab .x-button-icon.bookmarks {
+	-webkit-mask-image:none;
+	background:url(resources/images/buttonIconBookmarks.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-tab-active .x-button-icon.bookmarks {
+	background:url(resources/images/buttonIconBookmarksActive.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-tab .x-button-icon.info {
+	-webkit-mask-image:none;
+	background:url(resources/images/buttonIconInfo.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-tab-active .x-button-icon.info {
+	background:url(resources/images/buttonIconInfoActive.png) 0 0 no-repeat transparent !important;
+	background-size:30px 30px !important;
+}
+.x-title {
+	font-size:1em;
+	font-weight:normal;
+}
+.homeBox {	
+	border:1px solid #f5f5f5;
+	padding:10px;
+	vertical-align:bottom;
+	
+	h3 {
+		color:#FFF;
+		font-size:1.75em;
+		margin:0;
+		letter-spacing:-0.05em;
+		line-height:1.3em;
+	}
+	h4 {
+		font-size:0.75em;
+		margin:0;
+		line-height:1.3em;
+	} 
+}
+.homeBoxGreen {
+	background:url(resources/images/homeBoxGreen.png) 0 0 repeat #2fb69a;
+	border-left:none;
+	text-align:right;
+}
+.homeBoxDark {
+	background:url(resources/images/homeBoxDark.png) 0 0 repeat #444343;
+	border-left:none;
+	text-align:right;
+	
+	h4 {
+		color:#a2a1a1;
+	}
+}
+.homeBoxRed {
+	background:url(resources/images/homeBoxRed.png) 0 0 repeat #af2748;
+	border-left:none;
+	vertical-align:top;
+}
+.homeBoxLight {
+	background:url(resources/images/homeBoxLight.png) 0 0 repeat #80807f;
+	border-right:none;
+}
+.homeBoxBlue {
+	background:url(resources/images/homeBoxBlue.png) 0 0 repeat #1fa0b1;
+	border-right:none;
+}
+.homeBox {
+	h4 {
+		text-transform:uppercase;
+	}
+}
+.x-button-label {
+	color:#FFF;
+	font-size:10px !important;
+	font-weight:bold;
+}
+.funCard .x-body, .infoCard .x-body	 {
+	background:#FFF;
+}
+.questionTop {
+	padding:20px;
+	
+	h1 {
+		font-size:1.8em;
+		color:#AF2748;
+		line-height:1em;
+		margin-bottom:0.25em;
+	}
+	h2 {
+		font-size:2.4em;
+		line-height:1em;
+		margin-bottom:0.25em;
+	}
+	h3 {
+		background:#AF2748;
+		color:#FFF;
+		display:inline-block;
+		line-height:1em;
+		margin:0 0 0.5em -20px;
+		padding:10px 20px;
+	}
+	h4 {
+		line-height:1.5em;
+		margin-bottom:0.25em;
+	}
+}
+.questionMid {
+	background:url(resources/images/questionMid.png) 0 0 repeat-x #d6d7d8;
+	background-size:320px 105px;
+	min-height:105px;
+}
+.questionButton {
+	background:url(resources/images/buttonTrue.png) center center no-repeat transparent;
+	background-size:85px 85px;
+	float:left;
+	height:85px;
+	margin-top:10px;
+	width:50%;
+}
+.false {
+	background:url(resources/images/buttonFalse.png) center center no-repeat transparent;
+	background-size:85px 85px;
+}
+.x-carousel-indicator span {
+	border-radius: 0.5em;
+	height: 1em;
+	width: 1em;
+	-webkit-border-radius: 0.5em;
+}
+.answerReveal {
+	background:#FFF;
+	padding:70px 20px 10px;
+	h1 {
+		font-size:1.8em;
+		line-height:1em;
+		margin-bottom:0.25em;
+	}
+	h2 {
+		font-size:2.4em;
+		line-height:1em;
+		margin-bottom:0.25em;
+	}
+	h3 {
+		font-size:1em;
+		margin-bottom:0.25em;
+	}
+	h4 {
+		font-size:1em;
+		line-height:1.5em;
+		margin-bottom:0;
+	}	
+	h5 {
+		background:#000;
+		display:inline-block;
+		line-height:1em;
+		margin:10px 0 0;
+		padding:10px 20px;
+		
+		a {
+			color:#BBB !important;
+			text-decoration:none !important;
+		}
+	}
+}
+.cramped {
+	line-height:1.25em !important;
+}					
+.correct {
+	background:url(resources/images/correct.png) center top repeat-x transparent;
+	background-size:960px 55px;
+}
+.wrong {
+	background:url(resources/images/wrong.png) center top repeat-x transparent;
+	background-size:960px 55px;
+}
+.x-carousel-indicator-dark span {
+	background:#000;
+}
+.x-carousel-indicator-dark span.x-carousel-indicator-active {
+	background:#AF2748;
+}
+.infoBubble {
+    background: #000;
+    overflow: auto;
+    padding: 16px 10px 0 20px;
+    position: relative;
+}
+.infoBubbleInner {
+    overflow: auto;
+    padding-bottom: 6px;
+    position: relative;
+}
+.infoBubbleFooter {
+    background-position: 40px 0;
+    background-repeat: no-repeat;
+    height: 20px;
+}
+.infoBubbleFooterCloseBtn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.infoBubble h3 {
+    color: #FCFCFC;
+    font-family: "Arial",sans-serif;
+    font-size: 138.5%;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-right: 100px;
+}
+.infoBubble h3 span {
+    font-size: 85%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.infoBubble p {
+    font-size: 116%;
+    margin: 0 100px 0.8em 0;
+}
+.infoBubble p a {
+    font-weight: 700;
+}
+.halfWidthButton {
+	background-color:#000;	
+	background-image:url(resources/images/iconPhone.png);
+	background-size:25px 25px;
+	background-position:center right;
+	background-repeat:no-repeat;
+	color:#BBB !important;
+	display:block;
+	float:left;
+	font-weight:bold;
+	margin-right:10px;
+	margin-bottom:20px;
+	padding:10px;
+	text-decoration:none !important;
+	width:45%;
+}
+.visitWebsite {
+	background-image:url(resources/images/iconMarker.png);
+	background-size:25px 25px;
+	margin-right:0;
+	margin-left:10px;	
+}
+.orangeBlock {
+	background:#e39120;
+	float:left;
+	margin-left:-20px !important;
+	padding:10px 20px;
+}
+.clearLeft {
+	clear:left;
+}
+.sLOK {
+	list-style-type:none !important;
+	padding-left:0 !important;
+	li {
+		background-position:center left;
+		background-repeat:no-repeat;
+		height:40px;
+		line-height:40px;
+		list-style-type:none !important;
+		padding-left:40px;
+	}
+	.li-contraception {
+		background-image:url(resources/images/listIconContraception-black.png);
+		background-size:40px 40px;
+	}
+	.li-emergency-contraception {
+		background-image:url(resources/images/listIconEmergencyContraception-black.png);
+		background-size:40px 40px;
+	}
+	.li-free-condoms {
+		background-image:url(resources/images/listIconFreeCondoms-black.png);
+		background-size:40px 40px;
+	}
+	.li-hiv-counselling {
+		background-image:url(resources/images/listIconHivCounselling-black.png);
+		background-size:40px 40px;
+	}
+	.li-hiv-support {
+		background-image:url(resources/images/listIconHivSupport-black.png);
+		background-size:40px 40px;
+	}
+	.li-hiv-testing {
+		background-image:url(resources/images/listIconHivTesting-black.png);
+		background-size:40px 40px;
+	}
+	.li-hiv-treatment-and-care {
+		background-image:url(resources/images/listIconHivTreatmentAndCare-black.png);
+		background-size:40px 40px;
+	}
+	.li-post-exposure-prophylaxis {	
+		background-image:url(resources/images/listIconPostExposureProphylaxis-black.png);
+		background-size:40px 40px;
+	}
+	.li-sti-testing {
+		background-image:url(resources/images/listIconStiTesting-black.png);
+		background-size:40px 40px;
+	}
+	.li-sti-treatment {
+		background-image:url(resources/images/listIconStiTreatment-black.png);
+		background-size:40px 40px;
+	}
+	.li-sexual-health-information-advice {
+		background-image:url(resources/images/listIconSexualHealthInfoAdvice-black.png);
+		background-size:40px 40px;
+	}
+}
+.resultsPanel {
+	background:url(resources/images/fiftyShades.png) 0 0 repeat #d6d7d8;
+	text-align:center;
+	
+	.niceTry {
+		background-color:transparent;
+		background-image:url(resources/images/niceTry.png);
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:200px 200px;
+		height:200px;
+		width:100%;
+	}
+	.wellDone {
+		background-color:transparent;
+		background-image:url(resources/images/wellDone.png);
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:200px 200px;
+		height:200px;
+		width:100%;
+	}	
+	.backInBlack {
+		color:#000;
+		font-weight: bold;
+		font-size: 1.5em;
+		margin: 0;
+		line-height: 0.9em;
+	}
+	.scoreBoard {
+		color:#000;
+		font-weight:bold;
+		font-size:3em;
+		line-height:1em;
+	}
+	.sButton {
+		margin-top: 15px;
+		.services, .reset {
+			background-color:#000;
+			color:#BBB !important;
+			padding:10px;
+			text-decoration:none !important;
+		}
+	}
+}
+#providersList .x-list-item-label {
+	min-height:5em;
+}
+.x-toolbar-dark .x-button.x-button-back::before {
+	background:#121213;
+}
+.x-toolbar-dark .x-button {
+	background: #222324;
+	border: 1px solid #545659;
+	border-top-color: #121213;
+	color: white;
+}
+.x-toolbar-dark .x-button.x-button-pressing {
+	background: #222324;
+}
+.x-toolbar-dark .x-button.x-button-back::after {
+	background: #222324;
+}

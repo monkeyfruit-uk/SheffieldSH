@@ -1,0 +1,60 @@
+Ext.define('SheffieldSH.view.Links', {
+	extend: 'Ext.Panel',
+	xtype : 'linksCard',
+	
+	config: {
+		title: 'Links',
+		iconCls: 'bookmarks',
+		html: ['<div class="panelBox">',
+		'<h1>Local</h1>',
+		'<h2>Positively Sheffield</h2>',
+		'<p><a href="http://www.positivelysheffield.co.uk" target="_blank">www.positivelysheffield.co.uk</a></p>',
+		'<p>Website for people living with or affected by HIV in Sheffield.</p>',
+		'<hr>',
+		'<h2>Gay Sheffield</h2>',
+		'<p><a href="http://www.gaysheffield.co.uk" target="_blank">www.gaysheffield.co.uk</a></p>',
+		'<p>Information and advice for gay and bisexual men on coming out, staying safe and support groups and networks in Sheffield.</p>',
+		'<hr>',
+/*		'<h2>African In Sheffield</h2>',
+		'<p><a href="http://www.africaninsheffield.co.uk" target="_blank">www.africaninsheffield.co.uk</a></p>',
+		'<p>Sexual health information website for African people in Sheffield.</p>',
+		'<hr>',*/
+        '<h2>Sexual Health Sheffield</h2>',
+        '<p><a href="http://www.sexualhealthsheffield.nhs.uk" target="_blank">www.sexualhealthsheffield.nhs.uk</a></p>',
+        '<p>Information and advice about sexual health and sexual health services in Sheffield, including contraception, STIs, HIV, healthy sex and services for young people.</p>',
+        '<hr>',
+		'<h1>National</h1>',
+		'<h2>brook</h2>',
+		'<p><a href="http://www.brook.org.uk" target="_blank">www.brook.org.uk</a></p>',
+		'<p>Provides free and confidential sexual health advice and contraception to young people.</p>',
+		'<hr>',
+		'<h2>fpa</h2>',
+		'<p><a href="http://www.fpa.org.uk" target="_blank">www.fpa.org.uk</a></p>',
+		'<p>Sexual health advice and information on contraception, sexually transmitted infections, pregnancy choices, abortion and planning a pregnancy</p>',
+		'<hr>',
+		'<h2>Marie Stopes</h2>',
+		'<p><a href="http://www.mariestopes.org.uk" target="_blank">www.mariestopes.org.uk</a></p>',
+		'<p>Marie Stopes International offers expert, supportive advice on abortion, vasectomy and sexual health</p>',
+		'<hr>',
+		'<h2>Avert</h2>',
+		'<p><a href="http://www.avert.org" target="_blank">www.avert.org</a></p>',
+		'<p>AVERT is an international HIV and AIDS charity, based in the UK, working to avert HIV and AIDS worldwide, through education, treatment and care.</p>',
+		'<hr>',
+		'<h2>AIDSMap</h2>',
+		'<p><a href="http://www.aidsmap.com" target="_blank">www.aidsmap.com</a></p>',
+		'<p>HIV information and advice - provides news, background information, research progress, treatment options and multilingual resources.</p>',
+		'<hr>',
+		'<h2>THT</h2>',
+		'<p><a href="http://www.tht.org.uk" target="_blank">www.tht.org.uk</a></p>',
+		'<p>HIV/AIDS information, safer sex, online booklets and help line.</p>'].join(""),
+		scrollable: true,
+		styleHtmlContent: true,
+		items: [
+			{
+				xtype: 'toolbar',
+				docked: 'top',
+				title: 'Links'
+			}
+		]
+	}
+});

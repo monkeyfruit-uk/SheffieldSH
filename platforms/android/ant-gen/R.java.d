@@ -1,0 +1,24 @@
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-gen/com/DivaCreative/SheffieldSH/App/R.java \
+ : /Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable-hdpi/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable-hdpi/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable-ldpi/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable-ldpi/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable-mdpi/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable-mdpi/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable-xhdpi/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/drawable-xhdpi/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/values/strings.xml \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/res/xml/config.xml \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable-hdpi/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable-hdpi/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable-ldpi/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable-ldpi/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable-mdpi/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable-mdpi/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/res/drawable-xhdpi/splash.png \
+/Users/benwager/SheffieldSH/SheffieldSH/platforms/android/ant-build/AndroidManifest.xml \
