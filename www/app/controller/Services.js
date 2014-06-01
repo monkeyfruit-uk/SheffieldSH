@@ -393,7 +393,7 @@ Ext.define('SheffieldSH.controller.Services', {
 	
 	goToExternalMaps : function (providerPostcode) {
 		//console.log("Calc from " + this.currentLocation + " or " + currentLocation + " to " + providerPostcode);
-		window.open('http://maps.apple.com/?saddr=' + currentLocation + '&daddr='+ providerPostcode, '_blank');
+		window.open('http://maps.apple.com/?saddr=' + currentLocation + '&daddr='+ providerPostcode, '_system');
 
 	}/*,
 	

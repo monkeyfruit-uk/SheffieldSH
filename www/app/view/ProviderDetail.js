@@ -20,7 +20,7 @@ Ext.define('SheffieldSH.view.ProviderDetail', {
 		'<strong>W</strong> <a href="{website}" id="{website}" target="_blank">{website}</a></p>',
 		'<p><a class="halfWidthButton callNow" href="tel:{telephone}" id="{telephone}">Call Now</a>',
 		//'<a class="halfWidthButton visitWebsite" href="https://maps.google.com/maps?saddr=Current+Location&daddr={postcode}" id="getDirections" target="_blank">Get Directions</a></p>',
-		'<a class="halfWidthButton visitWebsite" href="" id="{postcode}" name="{postcode}" target="_blank">Get Directions</a></p>',
+		'<a class="halfWidthButton visitWebsite" href="" id="{postcode}" name="{postcode}" target="_system">Get Directions</a></p>',
 		'<p class="orangeBlock">SERVICES AVAILABLE</p>',
 		'<ul class="sLOK clearLeft">{servicesList}</ul>',
 		'<p class="orangeBlock">OPENING TIMES</p>',
@@ -68,11 +68,13 @@ Ext.define('SheffieldSH.view.ProviderDetail', {
 					// Ensure all links open with in-app.
 					var atags = document.getElementsByTagName('a');
 					for(var i = 0; i < atags.length; i++){
-						if(atags[i].target && atags[i].target == '_blank'){
-							atags[i].onclick = function(){
-								window.open(this.href, '_blank');
-								return false;
-							}
+						if(atags[i].target && (atags[i].target == '_blank' || atags[i].target == '_system')){
+							(function(link, target){
+								link.onclick=function(){
+									window.open(this.href, target);
+									return false;	
+								}
+							})(atags[i], atags[i].target);
 						}
 					}
 				},500);
